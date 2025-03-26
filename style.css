@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+    font-family:font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212 url('sakunabnl.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #f5f5f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Creepster', 'cursive';
+    color: #ff4444;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+a {
+    color: #ff6666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffa07a;
+    text-shadow: 0 0 5px #ff4444;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1cap 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ddd;
+}
+
+header img {
+    border: 3px solid #ff4444;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background: #ff4444;
+    color: #000;
+}
+
+/* Sections */
+.content-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #ff4444;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #ff4444;
+    padding-bottom: 10px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #ff9999;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff4444;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+}
+
+form button {
+    background: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #ff6666;
+}
+
+/* FAQ */
+.faq-item h2 {
+    font-size: 1.5rem;
+    color: #ff9999;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Social Section */
+#social a {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#social a:hover {
+    text-shadow: 0 0 10px #ff4444;
+}
+
+/* Testimonials */
+#testimonials p {
+    font-size: 1rem;
+    color: #f5f5f5;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+#testimonials p::before {
+    content: '\201C';
+    font-size: 2rem;
+    color: #ff4444;
+    vertical-align: top;
+}
+
+#testimonials p::after {
+    content: '\201D';
+    font-size: 2rem;
+    color: #ff4444;
+    vertical-align: bottom;
+}
+
+/* Events */
+#events ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+}
+
+#events li {
+    margin-bottom: 10px;
+    background: #222;
+    padding: 10px;
+    border-left: 5px solid #ff4444;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ff9999;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
